@@ -8,11 +8,14 @@ const Teaser = ({ blok }) => {
         <h2 className="text-6xl font-bold font-serif text-primary mb-4">
           {blok.headline}
         </h2>
-        <img
-          src={blok.image.filename}
-          alt={blok.image.alt}
-          className="w-full"
-        />
+        <figure>
+          <img
+            src={blok.image.filename}
+            alt={blok.image.alt}
+            className="w-full"
+          />
+          <figcaption className="mt-2 text-md">{blok.caption}</figcaption>
+        </figure>
       </div>
     </div>
   );
